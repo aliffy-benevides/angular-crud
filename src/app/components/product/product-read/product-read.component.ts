@@ -12,7 +12,7 @@ import { ProductService } from './../product.service';
 export class ProductReadComponent implements OnInit {
 
   products: Product[];
-  displayedColumns: string[] = ['id', 'name', 'price'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'action'];
   @ViewChild(MatTable) table: MatTable<Product>;
 
   constructor(
